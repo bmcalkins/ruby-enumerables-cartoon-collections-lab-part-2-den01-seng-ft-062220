@@ -8,6 +8,7 @@ end
 
 def summon_captain_planet(small_calls)
   small_calls.collect do |element|
+    element = element + "!"
   small_calls = element.split('')
   small_calls.first.upcase!
   small_calls.join
