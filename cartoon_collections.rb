@@ -9,18 +9,10 @@ end
 def summon_captain_planet(small_calls)
   small_calls.collect do |element|
     element = element + "!"
-  small_calls = element.split('')
-  small_calls.first.upcase!
-  small_calls.join
-end
-  
-  
-=begin
-small_calls.each do |element|
-   puts "#{element.capitalize}!"
+    small_calls = element.split('')
+    small_calls.first.upcase!
+    small_calls.join
   end
- small_calls.join('!, ')
-=end
 end
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
