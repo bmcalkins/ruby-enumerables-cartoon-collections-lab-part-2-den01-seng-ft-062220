@@ -18,7 +18,7 @@ end
   # Return a new array of the results
 
 def long_planeteer_calls(planeteer_calls)
-  planeteer_calls.select{ |lnum| num.length >
+  planeteer_calls.select{ |num| num.length >
   4 }.length > 0 
 end
   # Use an Enumerable to check if any string in the passed in array is greater than 4 characters long
